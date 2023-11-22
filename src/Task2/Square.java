@@ -1,8 +1,10 @@
 package Task2;
 
 public class Square extends Figure{
+
     public Square(int a) {
         super(a);
+
     }
 
     @Override

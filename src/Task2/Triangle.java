@@ -3,14 +3,18 @@ package Task2;
 import static java.lang.Math.sqrt;
 
 public class Triangle extends Figure {
-
-    public Triangle(int a) {
+    int b;
+    int c;
+    public Triangle(int a, int b, int c) {
         super(a);
+        this.b=b;
+        this.c=c;
     }
 
     @Override
     void square() {
-        System.out.println("S of triangle = "+((a*a*sqrt(3))/4));
+        int p=(a+b+c)/2;
+        System.out.println("S of triangle = "+((sqrt((p*(p-a)*(p-b)*(p-c))))));
     }
 
     @Override
